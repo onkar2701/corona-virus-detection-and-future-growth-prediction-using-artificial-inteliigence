@@ -1,0 +1,40 @@
+body{
+	margin: 150px;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(4.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+.form{
+
+	text-align: center;
+	
+
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 20px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff;
+	transition: 0.6s ease; 
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.main{
+	max-width: 1200px;
+	margin:auto;
+}
