@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input form</title>
+</head>
+<body background=" ">
+	<div class="register">
+		<form action="{{ url_for('predict')}}"method="post">
+            <div>
+			<h2>Enter Symptoms for Detection</h2>
+
+			<label>Age</label><br>
+			<input type="text" name="Age" id="age"
+			placeholder="Enter Your Age" required="required"><br><br>
+
+
+			<input type="text" name="gender" id="gender"
+			placeholder="Enter your gender" required="required"><br><br>
+
+			<label>Fever</label><br>
+			<input type="text" name="fever" id="fever"
+			placeholder="Enter temperature in fahreinheit" maxlength="50" size="30" required="required"><br><br>
+
+			<label>Swab Test</label><br>
+			<input type="text" name="swab" id="swab"
+			placeholder="Enter value of swab test" required="required"><br><br>
+
+			<label>Nasal Aspirate</label><br>
+			<input type="text" name="nasal" id="nasal"
+			placeholder="Enter value of nasal aspirate test" required="required" size="50"><br><br>
+
+
+			<label>Tracheal Aspirate</label><br>
+			<input type="text" name="trachea" id="trachea"
+			placeholder="Enter value of tracheal aspirate test" required="required" size="50"><br><br>
+
+			<label>Stool Test</label><br>
+			<input type="text" name="stool" id="stool"
+			placeholder="Enter value of stool test" required="required"><br><br>
+
+            <label>Stool Test</label><br>
+			<input type="text" name="stool" id="stool"
+			placeholder="Enter value of stool test" required="required"><br><br>
+
+			<input type="submit" name="predict" value="predict" id="sub" class="btn btn-primary btn-block btn-large"><br><br>
+                </div>
+		</form>
+        {{ prediction_text }}
+	</div>
+
+</body>
+</html>
